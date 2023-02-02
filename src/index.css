@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+code {
+  font-family: 'Almarai', sans-serif;
+}
+.navLogo{
+height: 55px;
+}
+.navForm{
+  width: 95%;
+}
+.navForm  input{
+  border-radius: 30px;
+  padding-right: 20px;
+}
+@media(max-width:991px){
+  .navForm{
+    width: 100%;
+  }
+}
+.navbar{
+  background: #b45b35;
+}
+.card{
+  position: relative;
+}
+.card-overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s all ease;
+}
+.card:hover .card-overlay{
+opacity: 1;
+visibility: visible;
+}
+.card-overlay-desc{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: rgba(255,255,255,.7);
+  font-size: 18px;
+  width: 90%;
+  text-align: center;
+}
+.card-overlay-desc p{
+  margin-bottom: 0;
+}
+.card-details-top{
+  display: flex;
+}
+.card-details-top img{
+  width: 250px;
+  height: 250px;
+}
+.card-details-top-desc{
+  width: 100%;
+  text-align: center;
+}
+.card-details{
+  height: calc(100vh - 90px);
+  background: #f6f6f6;
+}
+
+.details-btn .btn-details{
+  background-color: #b45b35;
+  padding: 5px 20px;
+  color:#fff
+}
+.details-btn .btn-details:hover{
+  color: #fff;
+  background-color: #b45b35;
+}
